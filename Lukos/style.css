@@ -1,0 +1,19 @@
+/* :root{
+    --col1:#059c05;
+    --col2:#027a02;
+} */
+.foot{
+    position: absolute;
+    bottom: 0;
+}
+.foot ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.foot ul li{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
