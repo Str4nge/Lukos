@@ -1,19 +1,44 @@
-/* :root{
+ :root{
     --col1:#059c05;
-    --col2:#027a02;
-} */
+    --col2:#046304;
+} 
+html,body{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    flex:1 0 auto;
+}
 .foot{
-    position: absolute;
+    flex-shrink: 0;
     bottom: 0;
 }
-.foot ul{
-    display: flex;
-    justify-content: space-around;
+.foot-box{
+    padding: 0;
+    list-style: none;
+    display: flex; 
     align-items: center;
+    justify-content: space-between;
 }
-.foot ul li{ 
+.hov{ 
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 50px;
+    width: 25%;
     padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--col2);
+    line-height: 30px;
+}
+.fa{
+    color: var(--col1);
+    font-size: 30px;
+}
+.hov:hover{
+box-shadow: black 0px 1px 5px;
 }
